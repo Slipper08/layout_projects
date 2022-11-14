@@ -1,1 +1,65 @@
 /* &display=swap */
+/*&subset=cyrillic-ext - подключаем для гугла, если сайт на киррилице*/
+@import url(./null.css);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap);
+
+._container{
+	max-width: 1020px;
+	margin: 0 auto;
+}
+
+.header__info-line {
+	display: flex;
+	justify-content: space-between;
+}
+.header__logo {
+}
+.logo {
+}
+.logo__link {
+}
+.logo__image {
+}
+.header__info {
+	display: flex;
+}
+.info {
+}
+.info__time {
+}
+.time {
+}
+.time__text {
+}
+.time__schedule {
+}
+.info__number {
+}
+.number {
+}
+.number__text {
+}
+.call {
+}
+.info__button {
+}
+.header__menu-line {
+	display: flex;
+	justify-content: space-between;
+}
+.menu {
+}
+.menu__list {
+	display: flex;
+}
+.menu__item {
+}
+.menu__link {
+}
+.menu__feauters {
+	display: flex;
+}
+.menu__search {
+}
+.menu__cart {
+}
