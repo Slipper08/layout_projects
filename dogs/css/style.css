@@ -224,7 +224,70 @@ border-radius: 10px;
 }
 
 /* ---HO-WE-ARE------------------ */
-
+.main__who-we-are {
+}
+.who-we-are__container {
+	position: relative;
+}
+.who-we-are__body {
+	background: #5D62B5;
+	border-radius: 40px;
+	position: relative;
+	bottom: 75px;
+	/* max-height: 700px;
+	overflow: hidden; */
+}
+.who-we-are__content{
+	max-width: 846px;
+	margin: 0 auto;
+}
+.who-we-are__block-name::before{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/overline_mark.svg') -5px -3px no-repeat;
+	margin: 0 11px 0 0;
+}
+.who-we-are__block-name {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 2;
+	text-transform: uppercase;
+	color: #F5F5F5;
+	padding: 95px 0 0 0;
+	margin: 0 0 33px 0;
+}
+.who-we-are__subtitle {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+	margin: 0 0 36px 0;
+}
+.who-we-are__text {
+	line-height: 1.5;
+	margin: 0 0 9px 0;
+}
+.who-we-are__images {
+}
+.image-who-we-are {
+	position: relative;
+	right: 37px;
+}
+.image-who-we-are__blob {
+}
+.image-who-we-are__nose {
+	position: absolute;
+	top: 45px;
+	left: 37px;
+	border-radius: 40px;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+}
+.who-we-are__circles{
+	position: absolute;
+	top: -191px;
+	right: -76px;
+}
 
 /* ---FOOTER------------------ */
 .footer{
