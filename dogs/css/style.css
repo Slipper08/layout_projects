@@ -403,6 +403,8 @@ border-radius: 10px;
 	right: 0;
 }
 /* ---SERVICES------------------ */
+/*Нужно добавить вертикальные отступы для карточек
+Не понял пока как добавитьтень блоку. Сейчас добавляется картинке*/
 .page__services-block {
 }
 .services-block {
@@ -410,22 +412,71 @@ border-radius: 10px;
 .services-block__container {
 }
 .services-block__body {
+	padding: 110px 0 0 0;
+}
+.services-block__name::before{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/overline-mark-purple.svg') -5px -3px no-repeat;
+	margin: 0 11px 0 0;
 }
 .services-block__name {
+	font-size: 12px;
+	font-weight: 700;
+	color: #5D62B5;
+	line-height: 2;
+	text-transform: uppercase;
+	margin: 0 0 33px 0;
 }
 .services-block__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.67;
+	color: #000000;
+	margin: 0 0 78px 0;
 }
 .services-block__items {
-}
-.list-service {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 0 66px 0;
 }
 .list-service__item {
+	max-width: 324px;
+	padding: 0 46px 0 43px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 20px;
+}
+.list-service__item:hover{
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	transition: all 800ms;
+	cursor: pointer;
 }
 .list-service__image {
+	max-width: 63px;
+	padding: 50px 0 0 0;
+	margin: 0 0 33px 0;
 }
 .list-service__title {
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 1.37;
+	color: #F2726F;
+	margin: 0 0 20px 0;
 }
 .list-service__test {
+	text-align: center;
+	line-height: 1.5;
+	color: #4B4B4B;
+	margin: 0 0 49px 0;
+}
+.services-block__button-block{
+	text-align: center;
+	margin: 0 0 122px 0;
 }
 .services-block__button {
 }
