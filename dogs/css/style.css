@@ -351,9 +351,12 @@ border-radius: 10px;
 /* ---DOG-WITH-BALL------------------ */
 .page__dog-ball {
 	background: #29C3BE;
+	position: relative;
+	z-index: 20;
 }
 .dog-ball__cover {
 	position: relative;
+	z-index: 20;
 }
 .dog-ball__cover > img {
 	position: absolute;
@@ -406,6 +409,7 @@ border-radius: 10px;
 /*Нужно добавить вертикальные отступы для карточек
 Не понял пока как добавитьтень блоку. Сейчас добавляется картинке*/
 .page__services-block {
+	position: relative;
 }
 .services-block {
 }
@@ -440,11 +444,13 @@ border-radius: 10px;
 .services-block__items {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	margin: 0 0 66px 0;
+	gap: 24px;
 }
 .list-service__item {
-	max-width: 324px;
+	/* max-width: 324px; */
+	flex: 1 1 calc((100% / 3) - 48px);
 	padding: 0 46px 0 43px;
 	display: flex;
 	flex-direction: column;
@@ -480,6 +486,13 @@ border-radius: 10px;
 }
 .services-block__button {
 }
+.services-block__image{
+	position: absolute;
+	top: -581px;
+	right: 0;
+}
+/* ---FORM------------------ */
+
 /* ---FOOTER------------------ */
 .footer{
 
