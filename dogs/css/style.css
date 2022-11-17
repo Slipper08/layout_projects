@@ -390,7 +390,7 @@ border-radius: 10px;
 	z-index: 2;
 }
 .dog-ball__circles {
-	top: 44px;
+	top: 84px;
 	left: 0;
 }
 .dog-ball__line {
@@ -401,6 +401,33 @@ border-radius: 10px;
 .dog-ball__ball {
 	top: 114px;
 	right: 0;
+}
+/* ---SERVICES------------------ */
+.page__services-block {
+}
+.services-block {
+}
+.services-block__container {
+}
+.services-block__body {
+}
+.services-block__name {
+}
+.services-block__title {
+}
+.services-block__items {
+}
+.list-service {
+}
+.list-service__item {
+}
+.list-service__image {
+}
+.list-service__title {
+}
+.list-service__test {
+}
+.services-block__button {
 }
 /* ---FOOTER------------------ */
 .footer{
