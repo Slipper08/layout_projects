@@ -118,6 +118,12 @@ div[class*="info__"]:not(:last-child){
 	padding: 0px 34px;
 	border-radius: 5px;
 	background: #F2726F;
+	color: #FFFFFF;
+}
+.button:hover{
+	transform: translate(1px, 1px);
+	transition: all 0.5s;
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
 }
 .header__menu-line {
 	display: flex;
@@ -502,12 +508,15 @@ border-radius: 10px;
 .block-form__body {
 	display: flex;
 	padding: 130px 0 210px 0;
+	position: relative;
 }
 .block-form__element {
 	max-width: 585px;
 	background: #5D62B5;
 	border-radius: 40px;
 	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	position: relative;
+	z-index: 20;
 }
 .block-form__content {
 	padding: 76px 57px;
@@ -542,12 +551,6 @@ form > *{
 form > *:focus{
 	outline: none;
 }
-.block-form__field-text {
-}
-.block-form__field-email {
-}
-.block-form__field-tel {
-}
 .block-form__select{
 	background: #5D62B5;
 	font-size: 16px;
@@ -559,8 +562,6 @@ form > *:focus{
 .block-form__button-block{
 	display: flex;
 	justify-content: flex-end;
-}
-.block-form__button {
 }
 .block-form__info {
 	padding: 0 0 0 80px;
@@ -586,6 +587,67 @@ form > *:focus{
 	font-weight: 900;
 	line-height: 1.37;
 	text-align: center;
+}
+.block-form__image-blob {
+	position: absolute;
+	top: 130px;
+	left: -94px;
+}
+.block-form__circles {
+	position: absolute;
+	top: 239px;
+	left: -110px;
+}
+/* ---GALLERY------------------ */
+.page__gallery-block {
+}
+.block-gallery {
+}
+.block-gallery__container {
+	position: relative;
+}
+.block-gallery__body {
+	padding: 0 87px;
+}
+.block-gallery__info {
+}
+.block-gallery__name-block::before{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/overline_mark.svg') -5px -3px no-repeat;
+	margin: 0 11px 0 0;
+}
+.block-gallery__name-block {
+	font-size: 12px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 2;
+	text-transform: uppercase;
+	margin: 0 0 33px 0;
+}
+.block-gallery__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+	margin: 0 0 55px 0;
+}
+.block-gallery__links-block {
+}
+.block-gallery__link-item {
+}
+.block-gallery__stream {
+}
+.block-gallery__image {
+}
+.block-gallery__indicate {
+}
+.block-gallery__background{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
 }
 /* ---FOOTER------------------ */
 .footer{
