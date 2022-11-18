@@ -189,14 +189,24 @@
 						<div class="block-form__element">
 							<div class="block-form__content">
 								<p class="block-form__form-name">Make an appointment</p>
-								<form action="" enctype="multipart/form-data" class="block-form__frame">
+								<form id="data" action="" enctype="multipart/form-data" class="block-form__frame">
 									<input type="text" placeholder="Name" class="block-form__field-text">
 									<input type="email" placeholder="Email" class="block-form__field-email">
 									<input type="tel" placeholder="Phone Number" class="block-form__field-tel">
-									<input type="text" placeholder="Select Service" class="block-form__field-text">
-									<textarea name="" placeholder="Tell us about your puppers include his/her name" id="" cols="30" rows="10" class="block-form__field-textarea"></textarea>
-									<button class="block-form__field-button">Make an Appointment</button>
+									<select name="" id="" class="block-form__select">
+										<option value="">Select Service</option>
+										<option value="boarding">Pet Boarding (No Cages)</option>
+										<option value="daycare">Pet Daycare</option>
+										<option value="spa">Pet Day Spa & Grooming</option>
+										<option value="meal-plans">Custom Meal Plans</option>
+										<option value="training">Pet Training</option>
+										<option value="store">Shop Our Store!</option>
+									</select>
+									<textarea rows="10" name="" placeholder="Tell us about your puppers include his/her name" id="" cols="30" rows="10" class="block-form__field-textarea"></textarea>
 								</form>
+								<div class="block-form__button-block">
+									<button form="data" class="block-form__button button">Make an Appointment</button>
+								</div>
 							</div>
 						</div>
 						<div class="block-form__info">
