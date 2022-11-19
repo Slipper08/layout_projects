@@ -607,7 +607,9 @@ form > *:focus{
 	position: relative;
 }
 .block-gallery__body {
-	padding: 0 87px;
+	padding: 0 72px;
+	position: relative;
+	z-index: 20;
 }
 .block-gallery__info {
 }
@@ -625,6 +627,7 @@ form > *:focus{
 	color: #FFFFFF;
 	line-height: 2;
 	text-transform: uppercase;
+	padding: 20px 0 0 0;
 	margin: 0 0 33px 0;
 }
 .block-gallery__title {
@@ -634,20 +637,73 @@ form > *:focus{
 	margin: 0 0 55px 0;
 }
 .block-gallery__links-block {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	border-bottom: 1px solid rgba(255, 255, 255, .15);
+	padding: 0 0 15px 0;
+	margin: 0 0 50px 0;
 }
 .block-gallery__link-item {
+	line-height: 1.5;
+}
+.block-gallery__link-item:nth-child(2)::after{
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: url(../img/gallery-ellipse-green.svg) 0 0 no-repeat;
+	position: absolute;
+}
+.block-gallery__link-item:nth-child(3)::after{
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: url(../img/gallery-ellipse-green.svg) 0 0 no-repeat;
+	position: absolute;
+}
+.block-gallery__link-item:last-child::after{
+	content: '';
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: url(../img/gallery-ellipse-grey.svg) 0 0 no-repeat;
+	position: absolute;
+}
+/* Подумать над реализацией линии прокрутки. Сейчас работает не очень.  */
+.block-gallery__link-item:hover{
+	cursor: pointer;
+	border-bottom: 4px solid #FFFFFF;
+	font-weight: 700;
+	line-height: 1.5;
 }
 .block-gallery__stream {
+	position: relative;
 }
 .block-gallery__image {
+	filter: drop-shadow(0px 8px 16px rgba(38, 38, 38, 0.24)) drop-shadow(0px 16px 24px rgba(38, 38, 38, 0.2));
+	border-radius: 40px;
+	margin: 0 0 60px 0;
 }
 .block-gallery__indicate {
+	display: inline-block;
+	line-height: 1.5;
+	padding: 0 19px;
+	max-height: 68px;
+	background: #62B58F;
+	border-radius: 50px;
+	position: absolute;
+	top: 30px;
+	right: 32px;
 }
 .block-gallery__background{
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: -1;
+	z-index: 2;
+	border-radius: 40px;
+	top: -80px;
 }
 /* ---FOOTER------------------ */
 .footer{
