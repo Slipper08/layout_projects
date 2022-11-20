@@ -705,6 +705,65 @@ form > *:focus{
 	border-radius: 40px;
 	top: -80px;
 }
+/* ---CUSTOMERS------------------ */
+.page__customers-block {
+}
+.block-customers {
+}
+.block-customers__container {
+}
+.block-customers__body {
+	margin: 0 0 83px 0;
+}
+.block-customers__name-block::before{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/overline-mark-purple.svg') -5px -3px no-repeat;
+	margin: 0 11px 0 0;
+}
+.block-customers__name-block {
+	font-size: 12px;
+	font-weight: 700;
+	color: #5D62B5;
+	line-height: 2;
+	text-transform: uppercase;
+	margin: 0 0 33px 0;
+}
+.block-customers__info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+.block-customers__info > *{
+	flex: 1 1 calc((100% / 3) - 48px);
+}
+.block-customers__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+	color: #000000;
+}
+.block-customers__item-review {
+	padding: 0 45px 45px 42px;
+}
+.review-item__text {
+	line-height: 1.5;
+	color: #4B4B4B;
+	margin-bottom: 38px;
+}
+.review-item__person {
+	display: flex;
+	align-items: center;
+}
+.review-item__image {
+	margin: 0 17px 0 0;
+}
+.review-item__name {
+	font-weight: 700;
+	color: #F2726F;
+}
 /* ---FOOTER------------------ */
 .footer{
 
