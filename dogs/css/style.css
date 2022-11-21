@@ -713,6 +713,7 @@ form > *:focus{
 .block-customers__container {
 }
 .block-customers__body {
+	padding: 60px 0 0 0;
 	margin: 0 0 83px 0;
 }
 .block-customers__name-block::before{
@@ -763,6 +764,111 @@ form > *:focus{
 .review-item__name {
 	font-weight: 700;
 	color: #F2726F;
+}
+/* ---IMPACT------------------ */
+.page__impact-block {
+	background: #2AB1AD;
+}
+.block-impact {
+}
+.block-impact__container {
+	position: relative;
+	z-index: 20;
+}
+.block-impact__body {
+	display: flex;
+	flex-direction: column;
+}
+.block-impact__info {
+}
+.info-impact {
+	display: flex;
+	gap: 82px;
+	position: relative;
+}
+.info-impact > * {
+	flex: 1 1 calc((100% / 2) - 82px);
+}
+.info-impact__text {
+	padding: 80px 0 0 0;
+}
+.info-impact__name::before{
+	content: '';
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url('../img/overline_mark.svg') -5px -3px no-repeat;
+	margin: 0 11px 0 0;
+}
+.info-impact__name {
+	font-size: 12px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 2;
+	text-transform: uppercase;
+	padding: 20px 0 0 0;
+	margin: 0 0 33px 0;
+}
+.info-impact__title {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+}
+.info-impact__image {
+	border-radius: 40px;
+	position: relative;
+	top: -80px;
+	right: 0;
+}
+.block-impact__list {
+	margin: 0 0 64px 0;
+}
+.list-impact {
+	display: flex;
+	gap: 24px;
+}
+.list-impact__item {
+	display: flex;
+	flex: 1 1 calc((100% / 4) - 96px);
+	align-items: center;
+	gap: 11px;
+}
+.list-impact__image {
+}
+.list-impact__info {
+}
+.list-impact__numbers {
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.17;
+}
+.list-impact__text {
+	font-weight: 700;
+	color: #5D62B5;
+}
+.block-impact__appointment {
+	display: flex;
+	justify-content: space-between;
+	padding: 43px 76px 46px 70px;
+	background: #5D62B5;
+	border-radius: 20px;
+	position: relative;
+	top: 74px;
+	
+}
+.block-impact__text {
+	font-size: 24px;
+	line-height: 1.25;
+	font-weight: 900;
+}
+.block-impact__button {
+	max-height: 48px;
+}
+.block-impact__image{
+	position: absolute;
+	top: 0;
+	right: -52px;
+	z-index: -1;
 }
 /* ---FOOTER------------------ */
 .footer{
